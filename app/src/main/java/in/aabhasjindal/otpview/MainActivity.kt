@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         val successButton = findViewById<Button>(R.id.button2)
         otpTextView = findViewById(R.id.otp_view)
         otpTextView?.requestFocusOTP()
-//        otpTextView?.updateBoxSizeDp(40, 40, 0)
+        otpTextView?.updateBoxSizeDp(40, 40, 0)
+        otpTextView?.updateBoxSize(40, 40, 0)
         otpTextView?.otpListener = object : OTPListener {
             override fun onInteractionListener() {
 

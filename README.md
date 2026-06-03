@@ -78,6 +78,8 @@ To get a callback when the user enters the otp make use of `OTPListener` Interfa
 ```java
 private OtpTextView otpTextView;
 otpTextView = findViewById(R.id.otp_view);
+//otpTextView?.updateBoxSizeDp(40, 40, 0) dp
+//otpTextView?.updateBoxSize(40, 40, 0) px
 otpTextView.setOtpListener(new OTPListener() {
 	@Override
 	public void onInteractionListener() {
